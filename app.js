@@ -1,6 +1,13 @@
 var max = 0
 var min=100000000
-var arr = [34, 54, 4, 67, 34, 90, 33, 12, 5]
+var arr = []
+var num,n;
+num= +prompt("How many numbers you want to enter: ")
+for(j=0;j<num;j++){
+    n = +prompt("Enter the number: ")
+    arr.push(n)
+}
+
 for (var i = 0; i < arr.length; i++) {
     if (arr[i] > max) {
         max = arr[i]
@@ -9,5 +16,6 @@ for (var i = 0; i < arr.length; i++) {
         min=arr[i]
     }
 }
+console.log(arr)
 console.log("The Largest number is: ", max)
 console.log("The smallest number is: ", min)
